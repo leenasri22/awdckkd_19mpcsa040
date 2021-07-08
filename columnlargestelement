@@ -1,0 +1,82 @@
+import java.util.*;
+public class columnlargestelement
+{
+public static void main(String[] args)
+{
+Scanner S=new Scanner(System.in);
+System.out.println("enter the number of rows: ");
+int r=S.nextInt();
+System.out.println("enter the number of columns: ");
+int c=S.nextInt();
+int arr[][]=new int[r][c];
+System.out.println("enter the elements of the 2D array");
+for(int i=0;i<r;i++)
+{
+   for(int j=0;j<c;j++)
+    {
+       arr[i][j]=S.nextInt();
+}
+      }
+System.out.println();
+System.out.println("input matrix");
+
+ for(int i=0;i<r;i++){
+     for(int j=0;j<c;j++){
+     System.out.print(arr[i][j]+" ");
+}
+System.out.println();
+}
+System.out.println();
+int l;
+for(int j=0;j<c;j++)
+{
+l=arr[j][0];
+for(int i=1;i<r;i++)
+{
+if(l<arr[j][i])
+ l=arr[j][i];
+}
+System.out.println("largest element in "+(j+1)+"column :"+l);
+}
+}
+}
+-----------------------------------------
+-----------------------------------------
+output
+C:\Users\Leenasri>d:
+
+D:\>javac columnlargestelement.java
+
+D:\>java columnlargestelement
+enter the number of rows:
+4
+enter the number of columns:
+4
+enter the elements of the 2D array
+11
+22
+33
+23
+56
+78
+45
+47
+28
+89
+27
+32
+23
+86
+47
+67
+
+input matrix
+11 22 33 23
+56 78 45 47
+28 89 27 32
+23 86 47 67
+
+largest element in 1column :33
+largest element in 2column :78
+largest element in 3column :89
+largest element in 4column :86
