@@ -1,0 +1,72 @@
+import java.util.*;
+public class columnsum
+{
+public static void main(String[] args)
+{
+Scanner S=new Scanner(System.in);
+System.out.println("enter the number of rows: ");
+int r=S.nextInt();
+System.out.println("enter the number of columns: ");
+int c=S.nextInt();
+int arr[][]=new int[r][c];
+System.out.println("enter the elements of the 2D array");
+for(int i=0;i<r;i++)
+{
+   for(int j=0;j<c;j++)
+    {
+       arr[i][j]=S.nextInt();
+}
+      }
+System.out.println();
+System.out.println("input matrix");
+
+ for(int i=0;i<r;i++){
+     for(int j=0;j<c;j++){
+     System.out.print(arr[i][j]+" ");
+}
+System.out.println();
+}
+System.out.println();
+
+for(int i=0;i<c;i++)
+{
+int sum=0;
+for(int j=0;j<r;j++)
+{
+sum+=arr[j][i];
+}
+System.out.println(" column "+(i+1)+"sum :" +sum);
+}
+}
+}
+---------------------------------------------------
+--------------------------------------------------
+output
+C:\Users\Leenasri>d:
+
+D:\>javac columnsum.java
+
+D:\>java columnsum
+enter the number of rows:
+3
+enter the number of columns:
+3
+enter the elements of the 2D array
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+input matrix
+1 2 3
+4 5 6
+7 8 9
+
+ column 1sum :12
+ column 2sum :15
+ column 3sum :18
