@@ -33,10 +33,11 @@ for(int j=0;j<c;j++)
 l=arr[j][0];
 for(int i=1;i<r;i++)
 {
-if(l<arr[j][i])
- l=arr[j][i];
+
+if(l<arr[i][j])
+ l=arr[i][j];
 }
-System.out.println("largest element in "+(i+1)+"column :"+l);
+System.out.println("largest element in "+(j+1)+"column :"+l);
 }
 }
 }
