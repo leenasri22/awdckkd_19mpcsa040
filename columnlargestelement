@@ -36,7 +36,7 @@ for(int i=1;i<r;i++)
 if(l<arr[j][i])
  l=arr[j][i];
 }
-System.out.println("largest element in "+(j+1)+"column :"+l);
+System.out.println("largest element in "+(i+1)+"column :"+l);
 }
 }
 }
@@ -76,7 +76,7 @@ input matrix
 28 89 27 32
 23 86 47 67
 
-largest element in 1column :33
-largest element in 2column :78
-largest element in 3column :89
-largest element in 4column :86
+largest element in 1column :56
+largest element in 2column :89
+largest element in 3column :47
+largest element in 4column :67
