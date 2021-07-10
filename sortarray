@@ -1,0 +1,68 @@
+import java.util.Arrays;
+ 
+class sortarray
+{
+    static final int MAX_SIZE=10;
+    static void sortByRow(int mat[][], int n)
+    {
+        for (int i = 0; i < n; i++)
+     
+            Arrays.sort(mat[i]);
+    }
+    static void transpose(int mat[][], int n)
+    {
+        for (int i = 0; i < n; i++)
+            for (int j = i + 1; j < n; j++)
+                {
+                int temp=mat[i][j];
+                mat[i][j]=mat[i][j];
+                mat[i][j]=temp;
+                }
+    }
+    static void sortMatRow(int mat[][],int n)
+   {
+     sortByRow(mat, n);
+     transpose(mat, n);
+     sortByRow(mat, n);
+     transpose(mat, n);
+    }
+    static void printMat(int mat[][], int n)
+    {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++)
+                System.out.print(mat[i][j] + " ");
+            System.out.println();
+        }
+    }
+    public static void main (String[] args)
+    {
+        int mat[][] = { { 10, 15, 13 },
+                        { 11, 8, 5 },
+                        { 9, 4, 3} };
+        int n = 3;
+     
+        System.out.print("Original Matrix:\n");
+        printMat(mat, n);
+     
+        sortMatRow(mat, n);
+     
+        System.out.print("Matrix After Sorting:\n");
+        printMat(mat, n);
+    }
+}
+---------------------------------------------------------
+----------------------------------------------------------
+output
+C:\Users\Leenasri>d:
+
+D:\>javac  sortarray.java
+
+D:\>java  sortarray
+Original Matrix:
+10 15 13
+11 8 5
+9 4 3
+Matrix After Sorting:
+10 13 15
+5 8 11
+3 4 9
