@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class  cases
+{
+    public static void main(String[] input)
+    {
+        String strUpper, strLower;
+        Scanner scan = new Scanner(System.in);
+        
+        System.out.print("Enter one word/name in Uppercase : ");
+        strUpper = scan.nextLine();
+        
+        strLower = strUpper.toLowerCase();
+        System.out.print("Equivalent Word/Name in Lowercase : " + strLower);
+    }
+}
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+output
+C:\Users\Leenasri>d:
+
+D:\>javac cases.java
+
+D:\>java cases
+Enter one word/name in Uppercase : HII
+Equivalent Word/Name in Lowercase : hii
+D:\>
