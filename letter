@@ -1,0 +1,24 @@
+class letter
+ {
+  public static void main(String[]args)
+{
+String name="java";
+System.out.println(name);
+String firstletter=name.substring(0,1);
+String remainingletters=name.substring(1,name.length());
+firstletter=firstletter.toUpperCase();
+name=firstletter+remainingletters;
+System.out.println(name);
+}
+}
+--------------------------------------------------
+----------------------------------------------------
+output
+
+C:\Users\Leenasri>d:
+
+D:\>javac letter.java
+
+D:\>java letter
+java
+Java
