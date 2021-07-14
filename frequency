@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+class frequency 
+{
+    public static void main(String args[])
+ {
+        Scanner s = new Scanner(System.in);
+        int a[] = new int[100];
+        int n, l, k = 0;
+
+        System.out.print("Enter size of an array:");
+        n = s.nextInt();
+
+        System.out.print("Enter array elements:");
+        for (int i = 0; i < n; i++) {
+            a[i] = s.nextInt();
+        }
+
+        System.out.print("Enter number for check frequency :");
+        l = s.nextInt();
+
+        for (int i = 0; i < n; i++) {
+            if (l == a[i]) {
+                k++;
+            }
+        }
+
+        System.out.println("Number of frequency:" + k);
+    }
+}
+----------------------------------------------------------------
+----------------------------------------------------------------
+output
+C:\Users\Leenasri>d:
+
+D:\>javac frequency.java
+
+D:\>java frequency
+Enter size of an array:10
+Enter array elements:5 8 6 4 5 8 7 8 9 5
+Enter number for check frequency :5
+Number of frequency:3
