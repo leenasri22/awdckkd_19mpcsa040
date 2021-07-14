@@ -1,0 +1,34 @@
+import java.util.*;
+public class Stringcontains
+{
+public static boolean containsString(String s1,String s2)
+{
+ boolean result=false;
+ result=s1.contains(s2);
+ return result;
+}
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+System.out.println(" Enter the first string: ");
+String s1=sc.nextLine();
+System.out.println(" Enter the second string: ");
+String s2=sc.nextLine();
+boolean result=containsString(s1,s2);
+System.out.println(result);
+sc.close();
+}
+}
+-------------------------------------------------------
+-------------------------------------------------------
+output
+C:\Users\Leenasri>d:
+
+D:\>javac Stringcontains.java
+
+D:\>java Stringcontains
+ Enter the first string:
+aditya
+ Enter the second string:
+dit
+true
