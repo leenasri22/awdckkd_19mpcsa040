@@ -1,0 +1,31 @@
+import java.util.*;
+class assignment1
+{
+  public static void main (String args [])
+  {
+    ArrayList <String>s1=new ArrayList <String>();
+    s1.add("red");
+    s1.add("blue");
+    s1.add("green");
+    s1.add("pink");
+   System.out.println(s1);
+    ArrayList <String>s2=new ArrayList <String>();
+    s2.add("white");
+    s2.add("yellow");
+    s2.add("pink");
+    System.out.println(s2);
+    s1.addAll(s2);
+    System.out.println(s1);
+    
+  }
+}
+-----------------------------------------------------------
+-----------------------------------------------------------
+output
+
+D:\>javac assignment1.java
+
+D:\>java assignment1
+[red, blue, green, pink]
+[white, yellow, pink]
+[red, blue, green, pink, white, yellow, pink]
