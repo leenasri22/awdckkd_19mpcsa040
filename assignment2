@@ -1,0 +1,55 @@
+import java.util.*;
+class assignment2 
+{
+    public static int search(int arr[], int x)
+    {
+        int n = arr.length;
+        for (int i = 0; i < n; i++) 
+        {
+           if (arr[i] == x)
+               return i;
+        }
+        return -1;
+    }
+
+    public static void main(String args[])
+
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.println("enter size of an array: ");
+        int n =s.nextInt();
+        int arr[] = new int[n];
+        System.out.println("enter the numbers: ");
+        for(int i=0;i<n;i++)
+        {
+        arr[i]=s.nextInt();
+        }
+       System.out.println("enter search element: ");
+
+        int x=s.nextInt();
+
+        int result = search(arr, x);
+
+        if (result == -1)
+
+            System.out.print("Element is not found");
+
+        else
+
+            System.out.print("Element found");
+
+    }
+}
+-----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+output
+D:\>javac assignment2.java
+
+D:\>java assignment2
+enter size of an array:
+5
+enter the numbers:
+10 20 30 40 50
+enter search element:
+30
+Element found
