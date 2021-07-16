@@ -1,0 +1,58 @@
+import java.util.*;
+class assignment3 {
+    public int[] sortArrayByParityII(int[] nums) {
+
+        int x[]={4,2,5,7};
+
+    int[] y=new int[x.length];
+
+    int index=0;
+
+    int i;
+
+    for(i=0;i<x.length;i++)
+
+    {
+
+      if(x[i]%2==0)
+
+      {
+
+        y[index]=x[i];
+
+        index=index+2;
+
+      }
+
+    }
+
+    index=1;
+
+    for(i=0;i<x.length;i++)
+
+    {
+
+      if(x[i]%2!=0)
+
+      {
+
+        y[index]=x[i];
+
+        index=index+2;
+
+      }
+
+    }
+
+    return y;
+
+  }
+
+}
+--------------------------------------------------
+--------------------------------------------------
+output
+D:\>javac assignment3.java
+
+D:\>java assignment3
+{4,5,2,7}
