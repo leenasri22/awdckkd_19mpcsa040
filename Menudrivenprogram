@@ -1,0 +1,91 @@
+import java.util.*;
+class Menudrivenprogram
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        HashMap<Integer,Integer>h=new HashMap<Integer,Integer>();
+        System.out.println("a.Ad key x and value y");
+        System.out.println("b.Print value of x");
+        System.out.println("c.Size of the Hashmap");
+        System.out.println("d.Removes value of key");
+        do
+        {
+            System.out.println("Enter your choice: ");
+            String ch=sc.next();
+            switch(ch)
+            {
+                case "a":
+                    System.out.println("Enter the key x: ");
+                    int x=sc.nextInt();
+                    System.out.println("Enter the value y: ");
+                    int y=sc.nextInt();
+                    h.put(x,y);
+                    break;
+                case"b":
+                    System.out.println("Enter the key x: ");
+                    int x1=sc.nextInt();
+                    if(h.containsKey(x1))
+                    System.out.println("Value of key x is: "+h.get(x1));
+                    else
+                    System.out.println("-1");
+                case "c":
+                    System.out.println("Size of HashMap is: ");
+                    System.out.println(h.size());
+                    break;
+                case "d":
+                    System.out.println("Enter the key x: ");
+                    int x2=sc.nextInt();
+                    System.out.println("Remove value with key x is: ");
+                    System.out.println(h.remove(x2));
+                    break;
+                case "e":
+                    System.exit(0);
+                default:
+                System.out.println("Invalid Choice");
+                break;
+            }
+        }
+        while(true);
+    }
+}
+------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------
+output
+D:\>javac Menudrivenpro.java
+
+D:\>java Menudrivenpro
+a.Ad key x and value y
+b.Print value of x
+c.Size of the Hashmap
+d.Removes value of key
+Enter your choice:
+a
+Enter the key x:
+1
+Enter the value y:
+2
+Enter your choice:
+a
+Enter the key x:
+66
+Enter the value y:
+3
+Enter your choice:
+b
+Enter the key x:
+66
+Value of key x is: 3
+Size of HashMap is:
+2
+Enter your choice:
+d
+Enter the key x:
+1
+Remove value with key x is:
+2
+Enter your choice:
+c
+Size of HashMap is:
+1
+Enter your choice:
