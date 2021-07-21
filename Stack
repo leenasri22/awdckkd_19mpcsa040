@@ -25,9 +25,9 @@ class Stack
 output
 C:\Users\Leenasri>d:
 
-D:\>javac Stacktoarray.java
+D:\>javac Stack.java
 
-D:\>java Stacktoarray
+D:\>java Stack
 Enter the Size of Array
 3
 Enter elements in to Array
